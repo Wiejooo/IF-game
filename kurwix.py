@@ -5,10 +5,10 @@ pygame.init()
 screen = pygame.display.set_mode((800, 400))
 pygame.display.set_caption('Kurwix')
 clock = pygame.time.Clock()
-terminal_font = pygame.font.Font('Terminal.ttf', 16)
+terminal_font = pygame.font.Font('IF-game/Terminal.ttf', 16)
 
-text_test = 'Tekst jak terminal '
-add_this = 'dodaj tekst, do ustawienia predkosci wyswietlania tekstu. Dlugiego tekstu.'
+text_test = ''
+add_this = 'Tekst jak terminal. Dodaj tekst, do ustawienia predkosci wyswietlania tekstu. Dlugiego tekstu.'
 i = 0
 print(len(add_this))
 while True:
