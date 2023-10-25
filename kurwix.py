@@ -42,10 +42,14 @@ while True:
             pygame.quit()
             exit()
     # ====== INPUT AREA
-        if input_available == True:
-            active = not active
-        else:
-            active = False
+        if event.type == pygame.MOUSEBUTTONDOWN and input_available:
+            # If the user clicked on the input_box rect.
+            if input_box.collidepoint(event.pos):
+                # Toggle the active variable.
+                print('ACTIVE')
+                active = not active
+            else:
+                active = False
             # Change the current color of the input box.
         color = color_active if active else color_inactive
         if event.type == pygame.KEYDOWN:
